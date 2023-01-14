@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6dfef9b74a.js" crossorigin="anonymous"></script>
+
+    <title>DivPlays ~ An online Music Player</title>
+</head>
+<body onload="loaded()">
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <p>DivPlays</p>
+            </div>
+            <div class="navlinks">
+            <ul>
+                <li class="hover-effect"><a href="category.html">Category</a></li>
+                <li class="hover-effect"><a href="aboutus.html">About us</a></li>
+                <li class="hover-effect"><a href="support.html">Support</a></li>
+                <li class="request"><a href="request-a-song.html">Request a Song</a></li>
+            </ul>
+            </div>
+        </div>
+        
+        <div class="song-section">
+        <!-- SONGS PART -->
+        <div class="songs">
+            <h3>Listen to You Favourite Songs</h3>
+            <div class="song" onclick="loadData(0)">
+                <img src="https://i.scdn.co/image/ab67616d00001e02fdb9cbec60d16e3f14c542a3" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Hanuman Chalisa Superfast</p>
+                    <p class="singer">Brijesh Shandilya</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(1)">
+                <img src="https://i.scdn.co/image/ab67616d0000b273c08202c50371e234d20caf62" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Kesariya From Brahmastra</p>
+                    <p class="singer">Pritam, Arijit Singh, Amitabh B.</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(2)">
+                <img src="https://i.scdn.co/image/ab67616d0000b2731555fec10000486f9331fbc8" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Tujhme Rab Dikhta Hai</p>
+                    <p class="singer">Salim, Roop Kumar Rathod</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(3)">
+                <img src="https://i.scdn.co/image/ab67616d00001e025d86ed8d8c5c071b87c2e650" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Achyutam Keshavam</p>
+                    <p class="singer">Maanya Arora</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(4)">
+                <img src="https://i.scdn.co/image/ab67616d0000b273b5db9fac30bd158408f1b477" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Ram Siya Ram</p>
+                    <p class="singer">Sachet Tandon</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(5)">
+                <img src="https://i.scdn.co/image/ab67616d00001e027faa48afca36e6854f2a8ce3" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Ek Raat</p>
+                    <p class="singer">Vilen</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(6)">
+                <img src="https://i.scdn.co/image/ab67616d0000b2739a7b3a3064aec7b75f693b86" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Humare Saath Shri Raghunath</p>
+                    <p class="singer">Prakash Gandhi</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(7)">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733f3d35703bdcd917dad51c4f" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Pasoori</p>
+                    <p class="singer">Ali Sethi x Shae Gill</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(8)">
+                <img src="https://i.scdn.co/image/ab67616d00001e02c43baa42b9d8c3e784bcb65f" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Shri Ram Jaanki Baithe Hai</p>
+                    <p class="singer">Ram Kumar Lakha</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(9)">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b8c830e266297cee34cf3b4" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Laembadgini</p>
+                    <p class="singer">Diljit Dosanjh</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(10)">
+                <img src="https://i.scdn.co/image/ab67616d00001e02ef2eed9fc8eb2c8fb9ae9e6b" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Chhore NCR Aale</p>
+                    <p class="singer">Paradox, MC SQUARE</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <div class="song" onclick="loadData(11)">
+                <img src="https://i.scdn.co/image/ab67616d00001e0231cc2963f1615892af6a9f93" class="banner" id="banner" alt="">
+                <div class="a-song">
+                    <p class="title">Kya Baat Ay</p>
+                    <p class="singer">Harrdy Sandhu</p>
+                </div>
+                <i class="fa-solid fa-play" id="side-play"></i>
+            </div>
+            <br>
+        </div>
+
+        <!-- PLAYER PART -->
+        <div class="player">
+            <div class="sections">
+            <div class="top-section">
+                <i class="fa-regular fa-heart" id="heart"></i>
+                <p>NOW PLAYING</p>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="r-banner">
+                <div class="circle1 animate wooh"></div>
+                <div class="circle2 animate wooh"></div>
+                <img src="" id="banner-pl">
+            </div>
+            <div class="player-data">
+                <p class="title-pl" id="title-pl"></p>
+                <p class="singer-pl" id="singer-pl"></p>
+            </div>
+            <div class="duration">
+                <span class="current" id="current">00:00</span>
+                <span class="fullduration" id="duration">00:00</span>
+            </div>
+            <div class="track" id="track">
+                <div class="progress" id="progress"><span></span></div>
+            </div>
+            <div class="controls">
+                <i class="fa-solid fa-backward" id="backward"></i>
+                <i class="fa-solid fa-pause" id="play-pause"></i>
+                <i class="fa-solid fa-forward" id="forward"></i>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+<audio src="" type="audio/mp3" id="audio"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
