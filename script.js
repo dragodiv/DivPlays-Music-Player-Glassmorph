@@ -93,7 +93,7 @@ let index = 0;
 function loaded(){
 
     loadData(index);
-    // audio.play();
+    audio.play();
 }
 
 function loadData(indexVal){
@@ -101,9 +101,8 @@ function loadData(indexVal){
     title.innerHTML = songs[indexVal].name;
     singer.innerHTML = songs[indexVal].singer;
     audio.src = "music/"+songs[indexVal].audio+".mp3";
-    if(playpause.classList.contains("fa-pause")){
+    if(playpause.classList.contains("fa-pause"))
         audio.play();
-}
 }
 
 
