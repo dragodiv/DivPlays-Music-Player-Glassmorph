@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+<title>DivPlays ~ An online Music Player</title>
+<meta name="title" content="DivPlays ~ An online Music Player">
+<meta name="description" content="Play your favourite songs online for free.
+Website Created by Divanshu Soni">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dragodiv.github.io/DivaPlays-Music-Player-Glassmorph/">
+<meta property="og:title" content="DivPlays ~ An online Music Player">
+<meta property="og:description" content="Play your favourite songs online for free.
+Website Created by Divanshu Soni">
+<meta property="og:image" content="https://raw.githubusercontent.com/dragodiv/DivaPlays-Music-Player-Glassmorph/main/images/DivPlays%20Banner.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://dragodiv.github.io/DivaPlays-Music-Player-Glassmorph/">
+<meta property="twitter:title" content="DivPlays ~ An online Music Player">
+<meta property="twitter:description" content="Play your favourite songs online for free.
+Website Created by Divanshu Soni">
+<meta property="twitter:image" content="https://raw.githubusercontent.com/dragodiv/DivaPlays-Music-Player-Glassmorph/main/images/DivPlays%20Banner.png">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/6dfef9b74a.js" crossorigin="anonymous"></script>
 
     <title>DivPlays ~ An online Music Player</title>
@@ -13,7 +37,7 @@
 <body onload="loaded()">
     
     <div class="container">
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <div class="logo">
                 <img src="images/logo.png" alt="">
                 <p>DivPlays</p>
@@ -26,12 +50,13 @@
                 <li class="request"><a href="request-a-song.html">Request a Song</a></li>
             </ul>
             </div>
+            <i class="fa-solid fa-bars" id="menu"></i>
         </div>
         
         <div class="song-section">
         <!-- SONGS PART -->
         <div class="songs">
-            <h3>Listen to You Favourite Songs</h3>
+            <h3>Listen to Your Favourite Songs</h3>
             <div class="song" onclick="loadData(0)">
                 <img src="https://i.scdn.co/image/ab67616d00001e02fdb9cbec60d16e3f14c542a3" class="banner" id="banner" alt="">
                 <div class="a-song">
@@ -132,7 +157,7 @@
         </div>
 
         <!-- PLAYER PART -->
-        <div class="player">
+        <div class="player" id="player">
             <div class="sections">
             <div class="top-section">
                 <i class="fa-regular fa-heart" id="heart"></i>
@@ -140,8 +165,8 @@
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
             <div class="r-banner">
-                <div class="circle1 animate wooh"></div>
-                <div class="circle2 animate wooh"></div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
                 <img src="" id="banner-pl">
             </div>
             <div class="player-data">
