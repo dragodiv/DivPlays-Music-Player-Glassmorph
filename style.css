@@ -395,7 +395,7 @@ i{
         position: absolute;
         display: flex;
         right: -100%;
-        transition: 0.4s linear;
+        transition: 0.2s linear;
         border-bottom: 2px solid white;
         border-radius: 10px;
         top: 75px;
@@ -498,7 +498,7 @@ i{
         position: absolute;
         display: flex;
         right: -100%;
-        transition: 0.4s linear;
+        transition: 0.2s linear;
         border-bottom: 2px solid white;
         border-radius: 10px;
         top: 75px;
