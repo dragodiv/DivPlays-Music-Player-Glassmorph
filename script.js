@@ -88,8 +88,8 @@ finTime = document.getElementById("duration"),
 menubar = document.getElementById("menu"),
 menu = document.getElementById("navbar");
 
-// let index = Math.floor(Math.random()*12+0);
-let index = 0;
+let index = Math.floor(Math.random()*12+0);
+// let index = 0;
 
 function loaded(){
 
