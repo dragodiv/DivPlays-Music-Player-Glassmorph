@@ -85,7 +85,8 @@ progressBar = document.getElementById("progress"),
 progressDetails = document.getElementById("track"),
 curTime = document.getElementById("current"),
 finTime = document.getElementById("duration"),
-animation = document.getElementsByClassName("wooh");
+menubar = document.getElementById("menu"),
+menu = document.getElementById("navbar");
 
 // let index = Math.floor(Math.random()*12+0);
 let index = 0;
@@ -93,7 +94,7 @@ let index = 0;
 function loaded(){
 
     loadData(index);
-    audio.play();
+    // audio.play();
 }
 
 function loadData(indexVal){
@@ -101,8 +102,10 @@ function loadData(indexVal){
     title.innerHTML = songs[indexVal].name;
     singer.innerHTML = songs[indexVal].singer;
     audio.src = "music/"+songs[indexVal].audio+".mp3";
-    if(playpause.classList.contains("fa-pause"))
+    if(playpause.classList.contains("fa-pause")){
         audio.play();
+    // location.href="#player";
+}
 }
 
 
@@ -190,13 +193,11 @@ audio.addEventListener("timeupdate", (e)=>{
     
 })
 
-
-
-
-
-
-
-
+menubar.addEventListener("click",()=>{
+    menubar.classList.toggle("fa-xmark");
+    menu.classList.toggle("active");
+})
+// heart function
 heart.addEventListener("mouseover", (e) =>{
     heart.classList.add("heart","fa-solid");
 })
