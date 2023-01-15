@@ -94,7 +94,7 @@ let index = 0;
 function loaded(){
 
     loadData(index);
-    audio.play();
+    // audio.play();
 }
 
 function loadData(indexVal){
