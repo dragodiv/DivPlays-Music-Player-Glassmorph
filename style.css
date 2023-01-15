@@ -373,7 +373,7 @@ i{
 }
 
 
-@media (360px < width < 740px){
+@media (width < 740px){
     .song-section{
     width: 95%;
     height: 95%;
@@ -444,6 +444,7 @@ i{
     }
     .player{
         margin: 0px;
+        margin-bottom: 20px;
     }
     .r-banner img{
         width: 250px;
@@ -471,7 +472,16 @@ i{
 
 
 
-@media (max-width:360px) {
+@media (width < 360) {
+    .song-section{
+        width: 95%;
+        height: 95%;
+        padding: 0px 10px;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        color: #fff;
+    }
     .r-banner img{
         width: 200px;
         height: 200px;
