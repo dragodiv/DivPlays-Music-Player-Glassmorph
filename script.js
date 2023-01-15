@@ -104,7 +104,7 @@ function loadData(indexVal){
     audio.src = "music/"+songs[indexVal].audio+".mp3";
     if(playpause.classList.contains("fa-pause"))
         audio.play();
-    location.href="#player";
+    // location.href="#player";
 }
 
 
