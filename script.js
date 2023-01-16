@@ -205,13 +205,8 @@ menubar.addEventListener("click",()=>{
 
 heart.addEventListener("mouseover", (e) =>{
     heart.classList.add("heart","fa-solid");
-    let check = 0;
-    if(heart.clicked == true){
-        break;
-    }else{
-        heart.addEventListener("mouseout", (e)=>{
+})
+ heart.addEventListener("mouseout", (e)=>{
         heart.classList.remove("heart","fa-solid");
-        })
-    }
 })
 
