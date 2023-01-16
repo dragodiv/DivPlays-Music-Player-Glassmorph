@@ -88,8 +88,8 @@ finTime = document.getElementById("duration");
 menubar = document.getElementById("menu"),
 menu = document.getElementById("navbar");
 
-let index = Math.floor(Math.random()*12+0);
-// let index = 0;
+// let index = Math.floor(Math.random()*12+0);
+let index = 0;
 
 function loaded(){
     loadData(index);
@@ -101,7 +101,7 @@ function loadData(indexVal){
     title.innerHTML = songs[indexVal].name;
     singer.innerHTML = songs[indexVal].singer;
     audio.src = "music/"+songs[indexVal].audio+".mp3";
-    index = indexVal;
+//     index = indexVal;
     if(playpause.classList.contains("fa-pause")){
         audio.play();
     }
