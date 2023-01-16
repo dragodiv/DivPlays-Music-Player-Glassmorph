@@ -101,6 +101,7 @@ function loadData(indexVal){
     title.innerHTML = songs[indexVal].name;
     singer.innerHTML = songs[indexVal].singer;
     audio.src = "music/"+songs[indexVal].audio+".mp3";
+    index = indexVal;
     if(playpause.classList.contains("fa-pause")){
         audio.play();
     }
@@ -204,7 +205,13 @@ menubar.addEventListener("click",()=>{
 
 heart.addEventListener("mouseover", (e) =>{
     heart.classList.add("heart","fa-solid");
+    let check = 0;
+    if(heart.clicked == true){
+        break;
+    }else{
+        heart.addEventListener("mouseout", (e)=>{
+        heart.classList.remove("heart","fa-solid");
+        })
+    }
 })
-heart.addEventListener("mouseout", (e)=>{
-    heart.classList.remove("heart","fa-solid");
-})
+
