@@ -92,8 +92,6 @@ let index = Math.floor(Math.random()*12+0);
 // let index = 0;
 
 function loaded(){
-    playpause.classList.add("fa-pause");
-    playpause.classList.remove("fa-play");
     loadData(index);
     // audio.play();
 }
@@ -105,6 +103,9 @@ function loadData(indexVal){
     audio.src = "music/"+songs[indexVal].audio+".mp3";
     if(playpause.classList.contains("fa-pause"))
         audio.play();
+    else
+        playpause.classList.remove("fa-pause");
+        playpause.classList.add("fa-play");
 }
 
 
