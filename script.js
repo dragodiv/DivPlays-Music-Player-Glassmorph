@@ -101,10 +101,9 @@ function loadData(indexVal){
     title.innerHTML = songs[indexVal].name;
     singer.innerHTML = songs[indexVal].singer;
     audio.src = "music/"+songs[indexVal].audio+".mp3";
-    if(playpause.classList.contains("fa-play"))
-        playpause.classList.remove("fa-play");
-        playpause.classList.add("fa-pause");
-        audio.play();
+    playpause.classList.remove("fa-play");
+    playpause.classList.add("fa-pause");
+    audio.play();
 }
 
 
