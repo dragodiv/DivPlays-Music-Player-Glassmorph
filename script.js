@@ -96,8 +96,8 @@ function loaded() {
 }
 
 function loadData(indexVal) {
-  console.log(index);
-  console.log(songs.length);
+//   console.log(index);
+//   console.log(songs.length);
   // Reset the metadata
   navigator.mediaSession.metadata = null;
 
