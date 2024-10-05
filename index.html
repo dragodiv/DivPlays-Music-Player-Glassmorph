@@ -1,206 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1LM1LLGY0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D1LM1LLGY0');
-</script>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-<title>DivPlays ~ An online Music Player</title>
-<meta name="title" content="DivPlays ~ An online Music Player">
-<meta name="description" content="Play your favourite songs online for free.
-Website Created by Divanshu Soni">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dragodiv.github.io/DivPlays-Music-Player-Glassmorph/">
-<meta property="og:title" content="DivPlays ~ An online Music Player">
-<meta property="og:description" content="Play your favourite songs online for free.
-Website Created by Divanshu Soni">
-<meta property="og:image" content="https://raw.githubusercontent.com/dragodiv/DivPlays-Music-Player-Glassmorph/main/images/DivPlays%20Banner.jpg">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://dragodiv.github.io/DivPlays-Music-Player-Glassmorph/">
-<meta property="twitter:title" content="DivPlays ~ An online Music Player">
-<meta property="twitter:description" content="Play your favourite songs online for free.
-Website Created by Divanshu Soni">
-<meta property="twitter:image" content="https://raw.githubusercontent.com/dragodiv/DivPlays-Music-Player-Glassmorph/main/images/DivPlays%20Banner.jpg">
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/6dfef9b74a.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/6dfef9b74a.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>DivPlays ~ An online Music Player</title>
-</head>
-<body onload="loaded()">
-    
+  </head>
+  <body onload="loaded()">
     <div class="container">
-        <div class="navbar" id="navbar">
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-                <p>DivPlays</p>
-            </div>
-            <div class="navlinks">
-            <ul>
-                <li class="hover-effect"><a href="category.html" target="_blank">Category</a></li>
-                <li class="hover-effect"><a href="aboutus.html" target="_blank">About us</a></li>
-                <li class="hover-effect"><a href="support.html" target="_blank">Support</a></li>
-                <li class="request"><a href="request-a-song.html" target="_blank">Request a Song</a></li>
-            </ul>
-            </div>
-            <i class="fa-solid fa-bars" id="menu"></i>
+      <div class="navbar" id="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+          <p>DivPlays</p>
         </div>
-        
-        <div class="song-section">
+        <div class="navlinks">
+          <ul>
+            <li class="hover-effect"><a href="category.html">Category</a></li>
+            <li class="hover-effect"><a href="aboutus.html">About us</a></li>
+            <li class="hover-effect"><a href="support.html">Support</a></li>
+            <li class="request">
+              <a href="request-a-song.html">Request a Song</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="menu"></i>
+      </div>
+
+      <div class="song-section">
         <!-- SONGS PART -->
         <div class="songs">
-            <h3>Listen to Your Favourite Songs</h3>
-            <div class="song" onclick="loadData(0)">
-                <img src="https://i.scdn.co/image/ab67616d00001e02fdb9cbec60d16e3f14c542a3" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Hanuman Chalisa Superfast</p>
-                    <p class="singer">Brijesh Shandilya</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+          <h3>Listen to Your Favourite Songs</h3>
+          <div class="song" onclick="loadData(0)">
+            <img
+              src="https://i.scdn.co/image/ab67616d00001e02fdb9cbec60d16e3f14c542a3"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Hanuman Chalisa Superfast</p>
+              <p class="singer">Brijesh Shandilya</p>
             </div>
-            <div class="song" onclick="loadData(1)">
-                <img src="https://i.scdn.co/image/ab67616d0000b273c08202c50371e234d20caf62" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Kesariya From Brahmastra</p>
-                    <p class="singer">Pritam, Arijit Singh, Amitabh B.</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(1)">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273c08202c50371e234d20caf62"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Kesariya From Brahmastra</p>
+              <p class="singer">Pritam, Arijit Singh, Amitabh B.</p>
             </div>
-            <div class="song" onclick="loadData(2)">
-                <img src="https://i.scdn.co/image/ab67616d0000b2731555fec10000486f9331fbc8" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Tujhme Rab Dikhta Hai</p>
-                    <p class="singer">Salim, Roop Kumar Rathod</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(2)">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b2731555fec10000486f9331fbc8"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Tujhme Rab Dikhta Hai</p>
+              <p class="singer">Salim, Roop Kumar Rathod</p>
             </div>
-            <div class="song" onclick="loadData(3)">
-                <img src="https://i.scdn.co/image/ab67616d00001e025d86ed8d8c5c071b87c2e650" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Achyutam Keshavam</p>
-                    <p class="singer">Maanya Arora</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(3)">
+            <img
+              src="https://i.scdn.co/image/ab67616d00001e025d86ed8d8c5c071b87c2e650"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Achyutam Keshavam</p>
+              <p class="singer">Maanya Arora</p>
             </div>
-            <div class="song" onclick="loadData(4)">
-                <img src="https://i.scdn.co/image/ab67616d0000b273b5db9fac30bd158408f1b477" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Ram Siya Ram</p>
-                    <p class="singer">Sachet Tandon</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(4)">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273b5db9fac30bd158408f1b477"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Ram Siya Ram</p>
+              <p class="singer">Sachet Tandon</p>
             </div>
-            <div class="song" onclick="loadData(5)">
-                <img src="https://i.scdn.co/image/ab67616d00001e027faa48afca36e6854f2a8ce3" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Ek Raat</p>
-                    <p class="singer">Vilen</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(5)">
+            <img
+              src="https://i.scdn.co/image/ab67616d00001e027faa48afca36e6854f2a8ce3"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Ek Raat</p>
+              <p class="singer">Vilen</p>
             </div>
-            <div class="song" onclick="loadData(6)">
-                <img src="https://i.scdn.co/image/ab67616d0000b2739a7b3a3064aec7b75f693b86" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Humare Saath Shri Raghunath</p>
-                    <p class="singer">Prakash Gandhi</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(6)">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b2739a7b3a3064aec7b75f693b86"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Humare Saath Shri Raghunath</p>
+              <p class="singer">Prakash Gandhi</p>
             </div>
-            <div class="song" onclick="loadData(7)">
-                <img src="https://i.scdn.co/image/ab67616d0000b2733f3d35703bdcd917dad51c4f" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Pasoori</p>
-                    <p class="singer">Ali Sethi x Shae Gill</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(7)">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b2733f3d35703bdcd917dad51c4f"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Pasoori</p>
+              <p class="singer">Ali Sethi x Shae Gill</p>
             </div>
-            <div class="song" onclick="loadData(8)">
-                <img src="https://i.scdn.co/image/ab67616d00001e02c43baa42b9d8c3e784bcb65f" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Shri Ram Jaanki Baithe Hai</p>
-                    <p class="singer">Ram Kumar Lakha</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(8)">
+            <img
+              src="https://i.scdn.co/image/ab67616d00001e02c43baa42b9d8c3e784bcb65f"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Shri Ram Jaanki Baithe Hai</p>
+              <p class="singer">Ram Kumar Lakha</p>
             </div>
-            <div class="song" onclick="loadData(9)">
-                <img src="https://i.scdn.co/image/ab67616d0000b2733b8c830e266297cee34cf3b4" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Laembadgini</p>
-                    <p class="singer">Diljit Dosanjh</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(9)">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b2733b8c830e266297cee34cf3b4"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Laembadgini</p>
+              <p class="singer">Diljit Dosanjh</p>
             </div>
-            <div class="song" onclick="loadData(10)">
-                <img src="https://i.scdn.co/image/ab67616d00001e02ef2eed9fc8eb2c8fb9ae9e6b" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Chhore NCR Aale</p>
-                    <p class="singer">Paradox, MC SQUARE</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(10)">
+            <img
+              src="https://i.scdn.co/image/ab67616d00001e02ef2eed9fc8eb2c8fb9ae9e6b"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Chhore NCR Aale</p>
+              <p class="singer">Paradox, MC SQUARE</p>
             </div>
-            <div class="song" onclick="loadData(11)">
-                <img src="https://i.scdn.co/image/ab67616d00001e0231cc2963f1615892af6a9f93" class="banner" id="banner" alt="">
-                <div class="a-song">
-                    <p class="title">Kya Baat Ay</p>
-                    <p class="singer">Harrdy Sandhu</p>
-                </div>
-                <i class="fa-solid fa-play" id="side-play"></i>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <div class="song" onclick="loadData(11)">
+            <img
+              src="https://i.scdn.co/image/ab67616d00001e0231cc2963f1615892af6a9f93"
+              class="banner"
+              id="banner"
+              alt=""
+            />
+            <div class="a-song">
+              <p class="title">Kya Baat Ay</p>
+              <p class="singer">Harrdy Sandhu</p>
             </div>
+            <i class="fa-solid fa-play" id="side-play"></i>
+          </div>
+          <br />
         </div>
 
         <!-- PLAYER PART -->
         <div class="player" id="player">
-            <div class="sections">
+          <div class="sections">
             <div class="top-section">
-                <i class="fa-regular fa-heart" id="heart"></i>
-                <p>NOW PLAYING</p>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
+              <i class="fa-regular fa-heart" id="heart"></i>
+              <p>NOW PLAYING</p>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
             <div class="r-banner">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <img src="" id="banner-pl">
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+              <img src="" id="banner-pl" />
             </div>
             <div class="player-data">
-                <p class="title-pl" id="title-pl"></p>
-                <p class="singer-pl" id="singer-pl"></p>
+              <p class="title-pl" id="title-pl"></p>
+              <p class="singer-pl" id="singer-pl"></p>
             </div>
             <div class="duration">
-                <span class="current" id="current">00:00</span>
-                <span class="fullduration" id="duration">00:00</span>
+              <span class="current" id="current">00:00</span>
+              <span class="fullduration" id="duration">00:00</span>
             </div>
             <div class="track" id="track">
-                <div class="progress" id="progress"><span></span></div>
+              <div class="progress" id="progress"><span></span></div>
             </div>
             <div class="controls">
-                <i class="fa-solid fa-backward" id="backward"></i>
-                <i class="fa-solid fa-pause" id="play-pause"></i>
-                <i class="fa-solid fa-forward" id="forward"></i>
+              <i
+                class="fa-solid fa-backward"
+                id="backward"
+                onclick="playPreviousSong()"
+              ></i>
+              <i
+                class="fa-solid fa-play"
+                id="play-pause"
+                onclick="PlayPauseMusic()"
+              ></i>
+              <i
+                class="fa-solid fa-forward"
+                id="forward"
+                onclick="playNextSong()"
+              ></i>
             </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
     </div>
-<audio src="" type="audio/mp3" autoplay="play" id="audio"></audio>
+    <audio src="" type="audio/mp3" autoplay="true" id="audio"></audio>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
